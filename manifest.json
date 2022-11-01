@@ -7,7 +7,7 @@
   "description": "Changed GitHub contribution graph to halloween all year long.",
 
   "icons": {
-    "48": "icons/border-48.png"
+    "48": "icons/pumpkin.jpg"
   },
 
   "content_scripts": [
