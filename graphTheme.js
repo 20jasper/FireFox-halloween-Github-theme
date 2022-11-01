@@ -1,8 +1,11 @@
-function generateQuerySelector(num){
-	return document.querySelector(`.ContributionCalendar-day[data-level="${num}"]`)
-}
+const colorsArr = ["rgb(22, 27, 34)", "rgb(99, 28, 3)", "rgb(189, 86, 29)", "rgb(250, 122, 24)", "rgb(253, 223, 104)"]
+changeColors(colorsArr)
 
-const level1 = generateQuerySelector(1)
-const level2 = generateQuerySelector(2)
-const level3 = generateQuerySelector(3)
-const level4 = generateQuerySelector(4)
+
+function changeColors(colorArr){
+	const style = document.querySelector(':root').style;
+	
+	colorArr.forEach((color, i)=>{
+		style.setProperty(`--color-calendar-graph-day-L${i}-bg`, color)
+	})
+}
